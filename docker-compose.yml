@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  vbnet-app:
+    build: .
+    image: test-app
+    container_name: vbnet-app
+  nginx:
+    image: nginx
+    container_name: nginx
+    ports:
+      - "80:80"
